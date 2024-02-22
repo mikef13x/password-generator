@@ -19,6 +19,7 @@ function generatePassword() {
   var lower = false;
   var special = false;
   var number = false;
+  //created while loop below that makes the user choose at least 1 of the 4 properties 
   while (upper === false && lower === false && special === false && number === false) {
     upper = confirm("Would you like your password to have uppercase letters?")
     lower = confirm("Would you like your password to have lowercase letters?")
