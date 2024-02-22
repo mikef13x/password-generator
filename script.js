@@ -28,13 +28,13 @@ function generatePassword() {
       window.alert("Please select at least one of the of the password categories")
     }
   }
+  // why would computer pick not just be password length. i need help understanding this for loop better
   var computerPick = "";
   for (i = 0; i < passwordLength; i++) {
     if (upper && computerPick.length < passwordLength) {
       var randomIndex = Math.floor(Math.random() * uppercase.length)
       computerPick = computerPick + uppercase[randomIndex]
     }
-
     if (lower && computerPick.length < passwordLength) {
       var randomIndex = Math.floor(Math.random() * lowercase.length)
       computerPick = computerPick + lowercase[randomIndex]
@@ -48,8 +48,9 @@ function generatePassword() {
       computerPick = computerPick + digits[randomIndex]
     }
   }
-
+  
   return computerPick;
+  
 }
 
 // Write password to the #password input
