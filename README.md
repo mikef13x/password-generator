@@ -8,4 +8,7 @@ This assignment was a password generator, where we had to create a working passw
 ![alt text](./assets/images/image.png "Password Generator Website Screenshot")
 
 ## Site Link
+https://mikef13x.github.io/password-generator/ 
 
+## Notes
+Worked with Kayla Freeman on this assignment.
