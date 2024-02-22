@@ -29,7 +29,7 @@ function generatePassword() {
       window.alert("Please select at least one of the of the password categories")
     }
   }
-  // why would computer pick not just be password length. i need help understanding this for loop better
+  // created a for loop that determines which characters are pulled into the password using random math
   var computerPick = "";
   for (i = 0; i < passwordLength; i++) {
     if (upper && computerPick.length < passwordLength) {
