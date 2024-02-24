@@ -11,12 +11,12 @@ function generatePassword() {
   //prompt user for password criteria
   var passwordLength = prompt("Please select a number between 8 and 128 for the length of your password.")
 // created while loop to make sure user input is between 8 and 128 characters
-  while (passwordLength < 8 || passwordLength > 128) {
+      while (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
     window.alert("The number selected was not between 8 and 128. Please try again.")
     passwordLength = prompt("Please select a number between 8 and 128 for the length of your password");
-  }
+  } 
   var upper = false;
-  var lower = false;
+  var lower = false; 
   var special = false;
   var number = false;
   //created while loop below that makes the user choose at least 1 of the 4 properties 
